@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "name":"Conon 2 (Inverter)",
+        "price":"1000",
+        "supplier":"Saklain Mustak",
+        "instock":10,
+        "description":"Conion 2 Ton Air Conditioner BE-24 ICE (Inverter) can be a perfect choice for you and your family with its cutting-edge features. This 2 ton AC can be a suitable addition to your home or your office during those hot summer months",
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2021/05/BE-12-ICE-Inverter-300x300.jpg"
+    },
+    {
+        "id":2,
+        "name":"Hitachi Refrigerator",
+        "price":"1200",
+        "supplier":"Saklain Mustak",
+        "instock":30,
+        "description":"Hitachi Refrigerator R-VG690P7PB GBK is available at all the showrooms of Best Electronics in Bangladesh. The Hitachi Refrigerator R VG660PUN3 GBK can be a perfect choice for you and your family ",
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/06/Hitachi-Refrigerator-R-VG690P7PB.jpg"
+    
+    },
+    {
+        "id":3,
+        "name":"Whirlpool Washing Machine",
+        "price":"800",
+        "supplier":"Saklain Mustak",
+        "instock":15,
+        "description":"This is the new Whirlpool Washing Machine 10.5 Kg 3LWTW4800YQ with improved efficiency. This new top loading super capacity washer begins a whole new chapter in cleaning",
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/09/Whirlpool-3LWTW4800YQ.jpg"
+    }
+    
+]

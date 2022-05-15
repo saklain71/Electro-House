@@ -4,16 +4,32 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <nav className='navbar '>
+            <nav className='navbar mx-2 bg bg-light'>
                 <div className='fs-5'>
-                    <Link className='text-decoration-none text-dark' to={"/"}> Electro-House</Link>
+                    <Link className='text-decoration-none text-dark fw-bold' to={"/"}>
+                        Electro-House
+                    </Link>
                 </div>
                 <div>
-                    <Link className='text-decoration-none text-dark' to="/">Home</Link>
-                    <Link className='text-decoration-none ms-4 text-dark' to="/inventory">Manage Inventory</Link>
-                    <Link className='text-decoration-none ms-4 text-dark' to="/blog">Blog</Link>
-                    <Link className='text-decoration-none ms-5' to="/login"><button className='bt btn-primary rounded text-dark'>Login</button></Link>
-                    <Link className='text-decoration-none ms-2 text-dark' to="/register"> <button className='bt btn-primary rounded text-dark'>Register</button></Link>
+                    <Link className='text-decoration-none text-dark' to="/">
+                        Home
+                    </Link>
+                    <Link className='text-decoration-none ms-4 text-dark' to="/inventory">
+                        Manage Inventory
+                    </Link>
+                    <Link className='text-decoration-none ms-4 text-dark' to="/blog">
+                        Blog
+                    </Link>
+                    <Link className='text-decoration-none ms-5' to="/login">
+                        <button className='bt btn-primary rounded text-dark'>
+                            Login
+                        </button>
+                    </Link>
+                    <Link className='text-decoration-none ms-2 text-dark' to="/register">
+                        <button className='bt btn-primary rounded text-dark'>
+                            Register
+                        </button>
+                    </Link>
                 </div>
             </nav>
 
