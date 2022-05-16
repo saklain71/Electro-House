@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
+
 
 const Register = () => {
+    // const [email, setEmail] = useState();
+    // const [password, setPassword] = useState();
+    // const [conPassword, setConPass] = useState();
     const navigate = useNavigate();
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useCreateUserWithEmailAndPassword(auth);
+
+      if (error) {
+        return (
+          <div>
+            <p>Error: {error.message}</p>
+          </div>
+        );
+      }
+
+      if (loading) {
+        return <p>Loading...</p>;
+    }
+      if(user){
+          navigate('/');
+      }
+      
+
     const RegisterHandle = event => {
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        const conPass = event.target.confirmPass.value;
+        
+        if(password === conPass){
+            createUserWithEmailAndPassword(email, password);
+        }
+       else{
+           alert('password not matched');
+       }
+        
 
     }
     const loginHandle = event => {

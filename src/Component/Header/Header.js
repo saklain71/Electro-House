@@ -1,7 +1,18 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const navigate = useNavigate();
+
+    const signOutHandler = () => {
+        signOut(auth);
+        navigate('/login');
+    }
+
     return (
         <div>
             <nav className='navbar mx-2 bg bg-light'>
@@ -20,16 +31,25 @@ const Header = () => {
                     <Link className='text-decoration-none ms-4 text-dark' to="/blog">
                         Blog
                     </Link>
-                    <Link className='text-decoration-none ms-5' to="/login">
-                        <button className='bt btn-primary rounded text-dark'>
-                            Login
-                        </button>
-                    </Link>
-                    <Link className='text-decoration-none ms-2 text-dark' to="/register">
+                    {
+                        user ?
+                            <button className='bt btn-primary rounded text-dark ms-2' onClick={signOutHandler}>
+                                signout
+                            </button> :
+                            <Link className='text-decoration-none ms-5' to="/login">
+                                <button className='bt btn-primary rounded text-dark'>
+                                    Login
+                                </button>
+                            </Link>
+                    }
+
+                    {
+                        (!user) ? <Link className='text-decoration-none ms-2 text-dark' to="/register">
                         <button className='bt btn-primary rounded text-dark'>
                             Register
                         </button>
-                    </Link>
+                    </Link> : ''
+                    }
                 </div>
             </nav>
 
