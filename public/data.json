@@ -26,6 +26,33 @@
         "instock":15,
         "description":"This is the new Whirlpool Washing Machine 10.5 Kg 3LWTW4800YQ with improved efficiency. This new top loading super capacity washer begins a whole new chapter in cleaning",
         "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/09/Whirlpool-3LWTW4800YQ.jpg"
+    },
+    {
+        "id":4,
+        "name":"Hitachi Refrigerator ",
+        "price":"1300",
+        "supplier":"S. M. Onik ",
+        "instock":15,
+        "description":"Hitachi Refrigerator R-S800P2PB GBK is available at all the showrooms of Best Electronics in Bangladesh. The side-by-side Hitachi Refrigerator R S700PUN2 GBK can be a perfect choice for you and your family",
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/05/1.jpg"
+    },
+    {
+        "id":5,
+        "name":"Sharp Microwave Oven ",
+        "price":"300",
+        "supplier":"S. M. Onik",
+        "instock":15,
+        "description":"Sharp Microwave Oven R 92AO ST V featured with 32L capacity with 315mm glass turntable. It’s come with the amazing Powerful output (1100W) for quick and efficient cooking and LED Display.",
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/03/Sharp-Microwave-Oven-R-92AO-ST-V.jpg"
+    },
+    {
+        "id":6,
+        "name":"Conion LED 49DK3L Smart TV",
+        "price":"650",
+        "supplier":"Saklain Mustak",
+        "instock":15,
+        "description":"Conion LED 49DK3L Smart Android LED Television is available at all the showrooms of Best Electronics in Bangladesh. Equipped with great picture quality and sound system that’ll blow your mind.",
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2018/02/Conion-LED-49DK3L-Smart-Full-HD-Android-LED-Television.png"
     }
     
 ]

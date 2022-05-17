@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import HomeDelivery from '../HomeDelivery/HomeDelivery';
 import Items from '../Items/Items';
 import "./Home.css";
 
@@ -24,6 +25,7 @@ useEffect(()=>{
                 ></Items>)
             }
            </div>
+           <HomeDelivery></HomeDelivery>
         </div>
     );
 };

@@ -10,7 +10,7 @@ navigate('/')
     return (
         <div>
             <div className='servicing-container mb-5'>
-                <img  className='w-25' src={img} alt="" />
+                <img  className='w-50' src={img} alt="" />
                 <h2>{name}</h2>
                 <p><b> Price: $</b>{price}</p>
                 <p><b> Supplier: </b>{supplier}</p>
