@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Items = ({ items }) => {
     const navigate = useNavigate();
-    const { id, name, price, supplier, description, img , instock} = items;
+    const {name, price, supplier, description, img , instock} = items;
     const handlerDetails = id => {
         navigate(`/items/${id}`);
     }

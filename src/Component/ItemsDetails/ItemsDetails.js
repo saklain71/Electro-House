@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import { useParams } from 'react-router-dom';
 
-const ItemsDetails = () => {
 
-    const { id } = useParams();
+const ItemsDetails = () => {
+    const {id} = useParams();
+
 
     const updateHandler = (event) => {
         event.preventDefault();
@@ -39,10 +41,11 @@ const ItemsDetails = () => {
 
     return (
         <div className='w-50 mx-auto mb-5 mt-5'>
-          {id}
+          <h1 className='text-info'>Update Below</h1>
             <form onSubmit={updateHandler}>
-                <input className='w-100 mb-2 ' type="text" name="name" placeholder='name'  /> <br />
-                <input className='w-100 mb-2 ' type="number" name="instock"  placeholder='instock'    /> <br />
+                <input className='w-100 mb-2 ' type="text" name="Name" placeholder='Name'  /> <br />
+                <input className='w-100 mb-2 ' type="text" name="name" placeholder='item: name'  /> <br />
+                <input className='w-100 mb-2 ' type="number" name="instock"  placeholder='instock number'    /> <br />
                 <input className='w-100 mb-2 ' type="number" name="price"  placeholder='price'   /> <br />
                 <input className='w-100 mb-2 ' type="text" name="supplier" placeholder='supplier'  /> <br />
                 <input className='w-100 mb-2 ' type="text" name="img" placeholder='img link'  /> <br />
