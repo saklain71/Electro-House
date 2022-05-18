@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddItems from './Component/AddItems/AddItems';
 import Blog from './Component/Blog/Blog';
 import Footer from './Component/Footer/Footer';
 import Header from './Component/Header/Header';
@@ -9,6 +10,7 @@ import ItemsDetails from './Component/ItemsDetails/ItemsDetails';
 import Login from './Component/Login/Login';
 import Register from './Component/Login/Register';
 import ManageInventory from './Component/ManageInventory/ManageInventory';
+import MyItems from './Component/MyItems/MyItems';
 import NotFound from './Component/NotFound/NotFound';
 import RequiredAuth from './Component/RequiredAuth/RequiredAuth';
 
@@ -31,6 +33,8 @@ function App() {
         
         }></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/additem" element={<AddItems></AddItems>}></Route>
+        <Route path="/myitem" element={<MyItems></MyItems>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

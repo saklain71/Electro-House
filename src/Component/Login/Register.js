@@ -6,9 +6,7 @@ import auth from '../firebase.init';
 
 
 const Register = () => {
-    // const [email, setEmail] = useState();
-    // const [password, setPassword] = useState();
-    // const [conPassword, setConPass] = useState();
+   
     const navigate = useNavigate();
     const [
         createUserWithEmailAndPassword,

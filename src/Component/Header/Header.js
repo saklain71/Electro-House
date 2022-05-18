@@ -32,6 +32,17 @@ const Header = () => {
                         Blog
                     </Link>
                     {
+                        user && <>
+                            <Link className='text-decoration-none ms-4 text-dark' to="/additem">
+                                Add Items
+                            </Link>
+                             <Link className='text-decoration-none ms-4 text-dark' to="/myitem">
+                             My Items
+                         </Link>
+                            </>
+                           
+                    }
+                    {
                         user ?
                             <button className='bt btn-primary rounded text-dark ms-2' onClick={signOutHandler}>
                                 signout
@@ -45,10 +56,10 @@ const Header = () => {
 
                     {
                         (!user) ? <Link className='text-decoration-none ms-2 text-dark' to="/register">
-                        <button className='bt btn-primary rounded text-dark'>
-                            Register
-                        </button>
-                    </Link> : ''
+                            <button className='bt btn-primary rounded text-dark'>
+                                Register
+                            </button>
+                        </Link> : ''
                     }
                 </div>
             </nav>
