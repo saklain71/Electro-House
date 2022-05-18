@@ -16,7 +16,7 @@ const Items = ({ items }) => {
                 <p><b> Supplier: </b>{supplier}</p>
                 <p><b> Instock: </b>{instock}</p>
                 <p className='text-center'> {description}</p>
-                <button onClick={() => handlerDetails(id)} className='btn bg-info mx-auto d-block'>Stock Update</button>
+                <button onClick={() => handlerDetails(items._id)} className='btn bg-info mx-auto d-block'>Stock Update</button>
 
             </div>
         </div>

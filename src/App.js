@@ -13,6 +13,7 @@ import ManageInventory from './Component/ManageInventory/ManageInventory';
 import MyItems from './Component/MyItems/MyItems';
 import NotFound from './Component/NotFound/NotFound';
 import RequiredAuth from './Component/RequiredAuth/RequiredAuth';
+import UpdateItem from './Component/UpdateItem/UpdateItem';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/myitem" element={<MyItems></MyItems>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/update" element={<UpdateItem></UpdateItem>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 
