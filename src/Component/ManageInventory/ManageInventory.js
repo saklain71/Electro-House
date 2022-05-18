@@ -11,8 +11,10 @@ const ManageInventory = () => {
     const AddItemHandler = () => {
         navigate('/additem');
     }
+
     const UpdateHandler = (id) => {
-        navigate(`items/${id}`);
+        console.log(id);
+        navigate(`/items/${id}`);
     }
 
     const DeleteHandler = id => {

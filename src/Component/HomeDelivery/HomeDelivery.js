@@ -9,7 +9,7 @@ const HomeDelivery = () => {
             </div>
             <div className='items-center float-start'>
                 <h1>Delivery Facilities</h1>
-                <p>We Provide Transportation facilities. We believe to give more extra facilities for our clients and customer also. Our every customer is a most valuable product. we make sure every product has safely arrived in your hand properly.</p>
+                <p className='text-start"'>We Provide Transportation facilities. We believe to give more extra facilities for our clients and customer also. Our every customer is a most valuable product. we make sure every product has safely arrived in your hand properly.</p>
                 <button className='btn btn-info'>Know More</button>
             </div>
         </div>
