@@ -51,7 +51,7 @@ const Register = () => {
     }
     return (
         <div>
-            <h1 className='mb-5 text-primary mt-2'>Register Form</h1>
+            <h1 className='mb-5 text-primary mt-2 text-center'>Register Form</h1>
             <form className='w-50 mx-auto mb-5' onSubmit={RegisterHandle}>
                 <div className="mb-3">
                     <label className="form-label fs-4 ">Email address</label>

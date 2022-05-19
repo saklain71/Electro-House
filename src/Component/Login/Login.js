@@ -40,7 +40,7 @@ const Login = () => {
 
     return (
         <div className='border'>
-            <h1 className='mb-5 text-primary'>Login Form</h1>
+            <h1 className='mb-5 text-primary text-center'>Login Form</h1>
             <div className='shadow-sm  border '>
                 <form className='w-50 mx-auto mb-5 mt-5 '
                     onSubmit={loginHandle}>
