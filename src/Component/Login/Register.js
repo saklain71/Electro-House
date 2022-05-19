@@ -18,13 +18,13 @@ const Register = () => {
       if (error) {
         return (
           <div>
-            <p>Error: {error.message}</p>
+            <p className='text-center'>Error: {error.message}</p>
           </div>
         );
       }
 
       if (loading) {
-        return <p>Loading...</p>;
+        return <p className='text-center'>Loading...</p>;
     }
       if(user){
           navigate('/');

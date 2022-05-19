@@ -22,10 +22,10 @@ const Login = () => {
         navigate(from, { replace: true });
     }
     if (error) {
-        errorElement = <p>Not matched Pass and Email</p>
+        errorElement = <p className='text-center'>Not matched Pass and Email</p>
     }
     if (loading) {
-        return <p>Loading...</p>;
+        return <p className='text-center'>Loading...</p>;
     }
     const loginHandle = (event) => {
         event.preventDefault();
