@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import "./ItemsDetails.css";
@@ -6,10 +7,11 @@ const ItemsDetails = () => {
     const { id } = useParams();
     const [items, setItems] = useState({});
     const [stock, setStock] = useState(0);
+    const [reStock, setRestock] = useState(0);
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:4000/item/${id}`)
+        fetch(`https://fathomless-shore-64327.herokuapp.com/item/${id}`)
             .then(res => res.json())
             .then(data => {
                 setItems(data)
@@ -22,19 +24,17 @@ const ItemsDetails = () => {
         let instock;
         if (stock > 0) {
             instock = parseInt(stock) - 1;
-            setStock(instock);
+          
             alert("Do you want prduct to deliver?")
         }
         else {
             alert('No product to deliver!')
         }
-        //console.log(instock);
-        // setStock(instock);
-        //  setStock(number);
-        const url = `http://localhost:4000/item/${id}`
+        setStock(instock)
+       
+        const url = `https://fathomless-shore-64327.herokuapp.com/item/${id}`
         fetch(url, {
             method: 'PUT',
-
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -48,50 +48,31 @@ const ItemsDetails = () => {
 
             })
     }
-    
     const reStockHandler = (e) => {
         e.preventDefault();
-        const newInputStock = e.target.reStock.value;
-        const newStock = parseInt(stock) + parseInt(newInputStock);
-        setStock(newStock);
-        const url = `http://localhost:4000/item/${id}`
-        fetch(url, {
-            method: 'PUT',
+        const newStock = e.target.reStock.value;
+        const reNewStock = parseInt(stock) + parseInt(newStock);
+        setStock(reNewStock);
+        e.target.reset();
+            const url = `https://fathomless-shore-64327.herokuapp.com/item/${id}`
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(
+                    {
+                        instock : reNewStock
+                    }
+                ),
+            })
+                .then(response => response.json())
+                .then(result => {
+                    console.log('Success:', result);
 
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                instock: newStock
-            }),
-        })
-            .then(res => res.json())
-            .then(result => {
-                console.log("success", result);
-            });
-
+                })
+        
     }
-
-    // const updateHandler = (event) => {
-    //     event.preventDefault();
-    //     const url = `http://localhost:4000/item/${id}`
-    //     fetch(url, {
-    //         method: 'PUT',
-
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(),
-    //     })
-    //         .then(response => response.json())
-    //         .then(result => {
-    //             console.log('Success:', result);
-    //             event.target.reset();
-    //         })
-    // };
-
-
-
     const manageHandler = () => {
         navigate('/inventory')
     }

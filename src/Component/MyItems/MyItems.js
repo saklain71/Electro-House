@@ -15,7 +15,7 @@ const MyItems = () => {
         const getOrders = () => {
             const email = user?.email;
             console.log(email);
-            const url = `http://localhost:4000/myitem/${email}`;
+            const url = `https://fathomless-shore-64327.herokuapp.com/myitem/${email}`;
             fetch(url)
             .then(res => res.json())
             .then(data =>{

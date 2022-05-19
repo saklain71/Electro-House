@@ -4,7 +4,7 @@ const ItemHook = () =>{
     const [service , setService] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/items')
+        fetch('https://fathomless-shore-64327.herokuapp.com/items')
             .then(res => res.json())
             .then(data =>
                 setService(data))

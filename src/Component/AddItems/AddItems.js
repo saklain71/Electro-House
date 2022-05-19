@@ -8,8 +8,7 @@ const AddItems = () => {
     const [user] = useAuthState(auth);
   
     useEffect(()=>{
-
-        fetch('http://localhost:4000/items')
+        fetch('https://fathomless-shore-64327.herokuapp.com/items')
         .then(res =>res.json())
         .then(data => setItems(data))
    },[items])
@@ -17,11 +16,12 @@ const AddItems = () => {
     // from react hook form
     const { register, handleSubmit } = useForm();
 
-    const onSubmit = data => {
+    const onSubmit =(data, e) => {
        const total = {...data, delivery : 0};
        console.log(total);
+       e.target.reset();
 
-        const url = 'http://localhost:4000/item';
+        const url = 'https://fathomless-shore-64327.herokuapp.com/item';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -38,7 +38,7 @@ const AddItems = () => {
     };
     return (
         <div className='w-50 mx-auto'>
-            <h1 className='text-info'>Add New Item</h1>
+            <h1 className='text-info text-center'>Add New Item</h1>
             <form className='d-flex flex-column p-2 ' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2 p-2' placeholder='Name' name='email' value={user?.email}  type="text" {...register("email")}/>
                 <input className='mb-2 p-2' placeholder='item: name' type="text" {...register("name", { required: true })} />

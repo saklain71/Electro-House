@@ -15,13 +15,13 @@ const Header = () => {
 
     return (
         <div>
-            <nav className='navbar mx-2 bg bg-light'>
+            <nav className='navbar bg bg-light'>
                 <div className='fs-5'>
-                    <Link className='text-decoration-none text-dark fw-bold' to={"/"}>
+                    <Link className='text-decoration-none text-dark fw-bold ms-2' to={"/"}>
                         Electro-House
                     </Link>
                 </div>
-                <div>
+                <div className='mx-2'>
                     <Link className='text-decoration-none text-dark' to="/">
                         Home
                     </Link>

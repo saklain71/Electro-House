@@ -18,7 +18,7 @@ const ManageInventory = () => {
     }
 
     const DeleteHandler = id => {
-        const url = (`http://localhost:4000/item/${id}`)
+        const url = (`https://fathomless-shore-64327.herokuapp.com/item/${id}`)
         fetch(url, {
             method: 'DELETE',
         })
@@ -30,8 +30,8 @@ const ManageInventory = () => {
     }
 
     return (
-        <div className='m-2'>
-            <button className='btn btn-info mt-2 mb-2 ' onClick={AddItemHandler}> Add Item</button>
+        <div className='m-2 text-center'>
+            <button className='btn btn-info mt-2 mb-2' onClick={AddItemHandler}> Add Item</button>
             {
                 items.map(items => <div key={items._id}>
                     <Table striped bordered hover variant="info">
