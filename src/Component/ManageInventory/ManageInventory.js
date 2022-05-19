@@ -27,13 +27,11 @@ const ManageInventory = () => {
             const rest = items.filter(items => items._id !== id)
             setItems(rest);
         })
-
     }
 
-
     return (
-        <div>
-            <button className='btn btn-info mt-2 mb-2' onClick={AddItemHandler}> Add Item</button>
+        <div className='m-2'>
+            <button className='btn btn-info mt-2 mb-2 ' onClick={AddItemHandler}> Add Item</button>
             {
                 items.map(items => <div key={items._id}>
                     <Table striped bordered hover variant="info">
@@ -54,7 +52,7 @@ const ManageInventory = () => {
                                 <td>{items.instock}</td>
                                 <td>
                                     <button className='btn btn-info' onClick={() => UpdateHandler(items._id)}>Update</button>
-                                    <button className='btn btn-info ms-1' onClick={()=>DeleteHandler(items._id)}>Delete</button>
+                                    <button className='btn btn-info ms-1 mt-1' onClick={()=>DeleteHandler(items._id)}>Delete</button>
                                 </td>
                             </tr>
                         </tbody>

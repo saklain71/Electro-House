@@ -1,7 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-//import { useNavigate } from 'react-router-dom';
-import axiosAdd from '../AxiosAdd';
 import auth from '../firebase.init';
 
 const MyItems = () => {
@@ -13,22 +12,16 @@ const MyItems = () => {
 
     useEffect(() => {
 
-        const getOrders = async() => {
+        const getOrders = () => {
             const email = user?.email;
             console.log(email);
-            const url = `http://localhost:4000/items?email=${email}`;
-            try {
-                const { data } = await axiosAdd.get(url);
-                setItems(data);
-                console.log(data);
-            }
-            catch (error) {
-                console.log(error.message);
-                // if (error.response.status === 401 || error.response.status === 403) {
-                //     signOut(auth);
-                //     navigate('/login');
-                // }
-            }
+            const url = `http://localhost:4000/myitem/${email}`;
+            fetch(url)
+            .then(res => res.json())
+            .then(data =>{
+                setItems(data)
+                console.log(data)
+            })
         }
         getOrders();
 
@@ -36,13 +29,8 @@ const MyItems = () => {
 
     return (
         <div className='w-50 mx-auto'>
-            <h2>Your orders number ...</h2>
-{/* 
-            {
-                Items.map(Items => <li key={Items._id}>
-                    <p>{Items.email} : {Items.service}</p>
-                </li>)
-            } */}
+            <h2 className='p-5'>Your Items Number : {Items?.length}</h2>
+            
         </div>
     );
 };

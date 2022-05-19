@@ -6,7 +6,8 @@
         "supplier":"Saklain Mustak",
         "instock":10,
         "description":"Conion 2 Ton Air Conditioner BE-24 ICE (Inverter) can be a perfect choice for you and your family with its cutting-edge features. This 2 ton AC can be a suitable addition to your home or your office during those hot summer months",
-        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2021/05/BE-12-ICE-Inverter-300x300.jpg"
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2021/05/BE-12-ICE-Inverter-300x300.jpg",
+        "email":"saklainm71@gmail.com"
     },
     {
         "id":2,
@@ -15,7 +16,8 @@
         "supplier":"Saklain Mustak",
         "instock":30,
         "description":"Hitachi Refrigerator R-VG690P7PB GBK is available at all the showrooms of Best Electronics in Bangladesh. The Hitachi Refrigerator R VG660PUN3 GBK can be a perfect choice for you and your family ",
-        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/06/Hitachi-Refrigerator-R-VG690P7PB.jpg"
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/06/Hitachi-Refrigerator-R-VG690P7PB.jpg",
+        "email":"saklainm71@gmail.com"
     
     },
     {
@@ -25,7 +27,8 @@
         "supplier":"Saklain Mustak",
         "instock":15,
         "description":"This is the new Whirlpool Washing Machine 10.5 Kg 3LWTW4800YQ with improved efficiency. This new top loading super capacity washer begins a whole new chapter in cleaning",
-        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/09/Whirlpool-3LWTW4800YQ.jpg"
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/09/Whirlpool-3LWTW4800YQ.jpg",
+        "email":"saklainm71@gmail.com"
     },
     {
         "id":4,
@@ -34,7 +37,8 @@
         "supplier":"S. M. Onik ",
         "instock":15,
         "description":"Hitachi Refrigerator R-S800P2PB GBK is available at all the showrooms of Best Electronics in Bangladesh. The side-by-side Hitachi Refrigerator R S700PUN2 GBK can be a perfect choice for you and your family",
-        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/05/1.jpg"
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/05/1.jpg",
+        "email":"saklainm71@gmail.com"
     },
     {
         "id":5,
@@ -43,7 +47,8 @@
         "supplier":"S. M. Onik",
         "instock":15,
         "description":"Sharp Microwave Oven R 92AO ST V featured with 32L capacity with 315mm glass turntable. It’s come with the amazing Powerful output (1100W) for quick and efficient cooking and LED Display.",
-        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/03/Sharp-Microwave-Oven-R-92AO-ST-V.jpg"
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2016/03/Sharp-Microwave-Oven-R-92AO-ST-V.jpg",
+        "email":"saklainm71@gmail.com"
     },
     {
         "id":6,
@@ -52,7 +57,8 @@
         "supplier":"Saklain Mustak",
         "instock":15,
         "description":"Conion LED 49DK3L Smart Android LED Television is available at all the showrooms of Best Electronics in Bangladesh. Equipped with great picture quality and sound system that’ll blow your mind.",
-        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2018/02/Conion-LED-49DK3L-Smart-Full-HD-Android-LED-Television.png"
+        "img":"https://www.bestelectronicsltd.com/wp-content/uploads/2018/02/Conion-LED-49DK3L-Smart-Full-HD-Android-LED-Television.png",
+        "email":"saklainm71@gmail.com"
     }
     
 ]
