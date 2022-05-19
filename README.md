@@ -1,3 +1,11 @@
+# Project :  Electro-House
+
+* this is based on warehouse project
+* Used react js as frontend tech and mongodb as backend
+* used react hook and form as well as firesbase hook 
+* used node mongo cord express dotenv tech in backend
+* uploaed client in firebase and backend in heroku
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
