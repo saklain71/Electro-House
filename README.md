@@ -1,5 +1,5 @@
 # Project :  Electro-House
-live side link (https://electro-products.web.app/additem)
+live side link (https://electro-products.web.app)
 
 * this is based on warehouse project
 * Used react js as frontend tech and mongodb as backend
